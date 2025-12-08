@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--text-dark);
+    color: var(--text-dark);
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 10px;
+
+    &:hover {
+        background: var(--btn-light);
+        border: 1px solid transparent;
+    }
+
+    &.active {
+        border: 1px solid transparent;
+        background: var(--btn-light);
+    }
+}

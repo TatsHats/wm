@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './button.scss',
 })
 export class Button {
-
+  @Input() size: 'small' | 'big' = 'big';
+  @Input() type: 'dark' | 'light' | 'text' = 'dark';
+  @Input() disabled = false;
 }

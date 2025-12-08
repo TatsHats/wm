@@ -1,0 +1,22 @@
+<div class="input-wr">
+    <span class="input-icon">
+        <img [src]="icon" alt="input icon">
+    </span>
+
+    <input 
+    [type]="type"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    />
+
+    @if(type === 'password') {
+        @if(visiblePassword) {
+            <span>
+                <img src="icons/non-vis-eye.svg" alt="password icon">
+            </span>
+        }
+        <span>
+            <img src="icons/vis-eye.svg" alt="password icon">
+        </span>
+    }
+</div>

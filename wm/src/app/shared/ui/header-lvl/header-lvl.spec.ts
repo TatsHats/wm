@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Input } from './input';
+import { HeaderLvl } from './header-lvl';
 
-describe('Input', () => {
-  let component: Input;
-  let fixture: ComponentFixture<Input>;
+describe('HeaderLvl', () => {
+  let component: HeaderLvl;
+  let fixture: ComponentFixture<HeaderLvl>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Input]
+      imports: [HeaderLvl]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Input);
+    fixture = TestBed.createComponent(HeaderLvl);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
