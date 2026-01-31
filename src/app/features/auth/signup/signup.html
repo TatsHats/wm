@@ -1,0 +1,62 @@
+<div class="wrapper-page">
+    <div class="title">
+        <h2>Create Your Account</h2>
+    </div>
+    
+    <div class="panel">
+        <app-input-ui 
+            [disabled]="false" 
+            placeholder="Name" 
+            type="text" 
+            icon="icons/login.svg">
+        </app-input-ui>
+
+        <app-input-ui 
+            [disabled]="false" 
+            placeholder="Email adress" 
+            type="text" 
+            icon="icons/email.svg">
+        </app-input-ui>
+
+        <app-input-ui 
+            [disabled]="false" 
+            placeholder="Password" 
+            type="text" 
+            icon="icons/password.svg">
+        </app-input-ui>
+
+        <app-input-ui 
+            [disabled]="false" 
+            placeholder="Repeat password" 
+            type="text" 
+            icon="icons/password.svg">
+        </app-input-ui>
+
+        <label class="checkbox">
+            <input type="checkbox">
+            <span>
+              I agree to the
+              <a href="/terms">Terms & Privacy</a>
+            </span>
+        </label>
+    
+        <app-button 
+          [disabled]="false" 
+          size="big" 
+          type="dark"
+          click=""
+        >
+          Sign Up
+        </app-button>
+
+        <app-button 
+            [disabled]="false" 
+            size="big" 
+            type="text"
+            routerLink="/login"
+        >
+          Have an account? Back to Login
+        </app-button>
+    </div>
+</div>
+

@@ -1,0 +1,44 @@
+@use '@angular/material' as mat;
+
+// html {
+//   @include mat.theme((
+//     color: (
+//       primary: mat.$azure-palette,
+//       tertiary: mat.$blue-palette,
+//     ),
+//     typography: Roboto,
+//     density: 0,
+//   ));
+// }
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+:root {
+  //background
+  --bg-gradient: linear-gradient(#4c8479, #2b5f56);
+  --bg-primary: #ffffff;
+  --bg-circle: linear-gradient(to bottom right, transparent, #a9c7c3);
+  //button
+  //--btn-dark = --bg-gradient
+  --btn-light: #a9c7c3;
+  --text-white: #ffffff;
+  --text-dark: #2b5f56;
+}
+
+[data-theme='dark'] {
+//background
+--bg-gradient: #19322c;
+--bg-primary: #284d46;
+--bg-circle: linear-gradient(to bottom right, transparent, #2b5f56);
+//button
+//--btn-dark = --bg-gradient
+--btn-light: linear-gradient(#4c8479, #2b5f56);
+--text-white: #ffffff;
+--text-dark: #ffffff;
+}

@@ -1,0 +1,25 @@
+.wrapper-page {
+    background: var(--bg-primary);
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background: var(--bg-gradient);
+        color: var(--bg-primary);
+        border-radius: 0 0 30px 30px;
+
+        h2 {
+            margin: 4rem auto;
+            font-size: 2rem;
+        }
+    }
+    
+    .panel {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+

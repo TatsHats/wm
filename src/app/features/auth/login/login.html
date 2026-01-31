@@ -1,0 +1,55 @@
+<div class="wrapper-page">
+    <div class="logo">
+        <button class="info" routerLink="/about">
+            <img src="icons/info.svg" alt="info image">
+        </button>
+
+        <h1>VocaBoost</h1>
+        <span>ENGLISH</span>
+        
+    </div>
+    
+    <div class="panel">
+        <app-input-ui 
+            [disabled]="false" 
+            placeholder="Email" 
+            type="text" 
+            icon="icons/email.svg">
+        </app-input-ui>
+    
+        <app-input-ui 
+            [disabled]="false" 
+            placeholder="Password" 
+            type="text" 
+            icon="icons/password.svg">
+        </app-input-ui>
+    
+        <app-button 
+          [disabled]="false" 
+          size="big" 
+          type="dark"
+          routerLink="/**"
+        >
+          Login
+        </app-button>
+          
+        <span class="or">or</span>
+    
+        <app-button 
+            [disabled]="false" 
+            size="big" 
+            type="dark"
+            routerLink="/signup"
+        >
+            Create an account
+        </app-button>
+        
+        <app-button 
+            [disabled]="false" 
+            type="text"
+            routerLink="/forgot-password"
+        >
+            Forgot your password?
+        </app-button>
+    </div>
+</div>

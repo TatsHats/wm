@@ -1,0 +1,36 @@
+.btn {
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 240px;
+    height: 40px;
+    margin: 10px auto;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.btn--dark {
+    background: var(--bg-gradient);
+    color: white;
+}
+
+.btn--light {
+    background: var(--btn-light);
+    color: white;
+}
+
+.btn--text {
+    color: var(--btn-dark);
+    border: none;
+    background: transparent;
+}
+
+.btn--small {
+    width: 100px;
+}
